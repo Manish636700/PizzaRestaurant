@@ -1,0 +1,470 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ruda {
+    font-family: "Ruda", serif;
+}
+.quattrocento{
+    font-family: "Quattrocento", serif;
+}
+    body{
+    background-color: black;
+    color:#FFF;
+    /* margin-top: 70px; */
+}
+.nav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border: 1px solid black;
+    padding: 0 20px; 
+    /* position: fixed;
+    top: 0;
+    z-index: 1000; Ensure navbar stays on top */
+}
+.logo>h1{
+    padding:10px;
+    font-weight: bold;
+    text-align: center;
+}
+.ops>ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.ops>ul>li{
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 16px;
+}
+.img{
+    position: relative;
+background-image: url(https://cdn.pixabay.com/photo/2020/07/14/21/55/pizza-5405848_1280.jpg);
+background-size: cover;
+background-position: center;
+height: 90vh;
+display: flex;
+flex-direction: column;
+}
+.img::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index:1;
+}
+.content1{
+    width: 700px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin: 50px 0px;
+    text-align: center;
+}
+ .content1 p{
+   font-family: Quattrocento;
+   font-weight: 700;
+   font-size:  101px;
+    line-height: 108.5px;
+   
+}
+.child{
+    border-top: 13px solid #F24C4C;
+    padding: 30px;
+    width:600px;
+    height: 320px;
+    position: relative;
+    z-index: 2;
+    margin-left: 60px;
+    
+
+}
+.child p{
+    font-family: Ruda;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 20px;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: justify;
+
+}
+.About
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.About .about_heading h1{
+    font-family: 'Quattrocento';
+    display: inline-block;
+    font-weight: 400;
+    font-size: 60px;
+    width:526px;
+    padding: 10px;
+    border-bottom:10px solid #B62828;
+    margin: 0 auto;
+}
+
+.About>.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:40px;
+    margin-top:60px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+.About>.content>.para{
+    width: 677px;
+    height: 420px;
+    border-top: 4px solid #F24C4C;
+    display: inline-block;
+    padding-top: 20px;
+}
+.About>.content>.para>p{
+    font-family: Ruda;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: justify;
+    margin: 0;
+}
+.About>.content>img{
+    width: 600px;
+    height: 400px;
+    display: block;
+}
+
+.Menu
+{
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+.Menu .menu_heading h1{
+    font-family: 'Quattrocento';
+    display: inline-block;
+    font-weight: 400;
+    font-size: 60px;
+    width:526px;
+    padding: 10px;
+    border-bottom:10px solid #B62828;
+    margin: 0 auto;
+}
+.Menu>.para{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.Menu>.para>p{
+    padding: 40px;
+    font-family: Ruda;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: left;
+}
+.Menu>.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.Menu>.content>.item1
+{  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 520px;
+    margin: 20px;
+}
+.Menu>.content>.item1>img{
+    width: 273.08px;
+    height: 200px;
+    display: block;
+}
+ .Menu>.content>.item1>.item_content>.h3>h3
+{
+    padding: 10px;
+    font-family: Ruda;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: left;
+    color:#F2C94C;
+}
+.Menu>.content>.item1>.item_content>.para>p
+{
+    padding-left: 10px;
+    text-align: left;
+    font-family: Ruda;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.Carousel{
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+.Carousel>.Carousel_heading>h1
+{
+    font-family: 'Quattrocento';
+    display: inline-block;
+    font-weight: 400;
+    font-size: 60px;
+    width:526px;
+    padding: 10px;
+    border-bottom:10px solid #B62828;
+}
+.Carousel>.content
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Carousel>.content>.img_box>img{
+   
+    height: 538px;
+    display: inline-block;
+}
+.Carousel>.content>.img_box>.dot{
+    margin-top: 20px;
+}
+.Gallary{
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+ .Gallary>.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Gallary >.Gallary_heading>h1
+{
+   font-family: 'Quattrocento';
+   display: inline-block;
+   font-size: 60px;
+   font-weight: 400;
+   width: 526px;
+   padding: 10px;
+   border-bottom: 10px solid #B62828;
+   margin-bottom: 50px;
+}
+.Gallary> .content >.img1 >img{
+    width: 600px;
+    height: 613px;
+ 
+}
+.Gallary> .content >.img2 >img{
+    width: 274px;
+    height: 200px;
+     
+}
+.Gallary> .content >.img3 >img{
+    width: 274px;
+    height: 302px;
+}
+
+.find {
+    text-align: center;
+    margin: 50px 100px;
+}
+
+.find > .find_heading > h1 {
+    font-family: 'Quattrocento';
+    display: inline-block;
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    width: 500px;
+    border-bottom: 9px solid #B62828;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+.find > .findcontent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.find > .findcontent > .map > img {
+    width: 600px;
+    height: 400px;
+}
+
+.find > .findcontent > .content > p {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    margin: 50px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.find > .findcontent > .content > .location,
+.find > .findcontent > .content > .contact {
+    display: flex;
+    margin: 40px;
+}
+
+.find > .findcontent > .content > .location > .icon,
+.find > .findcontent > .content > .contact > .icon {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find > .findcontent > .content > .location > .address {
+    margin-left: 40px;
+}
+
+.find > .findcontent > .content > .location > .address > p,
+.find > .findcontent > .content > .contact > .num > p {
+    font-family: 'Rudo', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.find > .findcontent > .content > .contact > .num > p {
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer>.findcontent{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Ruda;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 20px;
+}
+.footer>.findcontent>.email
+{display: flex;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;;
+}
+.footer>.findcontent>.email>.icon
+{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.footer>.findcontent>.contact>.icon
+{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.footer>.findcontent>.contact
+{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 30px;
+  
+}
+@media screen and (max-width : 700px) {
+    .img{
+        height: auto;
+    }
+    .content1{
+        width: auto;
+        font-size: 50px;
+    }
+    .child{
+        width: auto;
+        height: auto;
+        font-size: 10px;
+    }
+    .nav{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        font-size: small;
+    }
+    .About>.content{
+        flex-direction: column;
+    }
+    .About>.content>.para{
+        width: auto;
+        height: auto;
+    }
+    .About>.content>img{
+        width: auto;
+        height: auto;
+    }
+    .About .about_heading h1
+    {
+        width: auto;
+    }
+    .Menu>.para
+    {
+        height: auto;
+        width: auto;
+    }
+    .Menu>.content{
+        flex-direction: column;
+    }
+    .Carousel>.content{
+        flex-direction: column;
+    }
+    .Carousel>.content>.img_box>img{
+        height: auto;
+        width: 600px;
+    }
+    .Gallary>.content{
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }.find > .findcontent {
+        flex-direction: column;
+    }
+}
